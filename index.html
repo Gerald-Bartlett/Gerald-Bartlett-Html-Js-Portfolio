@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-          
+           
             <div class="topnav" id="myTopnav">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -34,20 +34,21 @@
                 </a>
               </div>
         </div>
-        
+       
     </nav>
    
     <section class="bgimage" id="home">
-      <video id="background-video" autoplay loop muted poster="lake_sunset_evening_twilight_red_333.mp4">
-        <source src="video/lake_sunset_evening_twilight_red_333.mp4" type="video/mp4">
+        <video autoplay muted loop id="myVideo" >
+        <source src="video/lake_sunset_evening_twilight_red_333.mp4" type="video/mp4" id="myVideo">
+        Your browser does not support the video tag.
         </video>
         <div class="container-fluid">
             <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">              
-                <h1 class="hero_title">Hello, My name is  Gerald Bartlett</h1>
-              
-                <h2 class="hero_desc">I'm a Software Developer in NewFoundland, Canada <br><br>
-                    <a href="G_Bartlett_2022_Resume.pdf" target=_blank ><b>Go to My Resume</b> </a></h2>
+                <h1 class="hero_title">Hello, My name is  Gerald Bartlett <br> I'm a Software Developer in NewFoundland, Canada <br>
+                   <br>  Take a stroll through my resume <br>  and get a glimpse of what I have done and get to know me.<br><br>
+                   
+                    <a href="Resume/G_Bartlett_2022_Resume.pdf" target=_blank ><b>Go to My Resume</b> </a></h2>
               
             </div>
             </div>
@@ -56,14 +57,8 @@
    
     <!-- about section-->
     <section id="about">
-        <div class="container mt-4 pt-4">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h1 class="text-center">This is Me</h1>
-          
+        <div class="container mt-4 pt-4">          
+            <h1 class="text-center">This is Me</h1>          
           
             <div class="row mt-4">
                 <div class="col-lg-4">
@@ -74,20 +69,20 @@
                     <p>
                         
                     </p>
-                    <div class="row mt-3">
+                    <div class="col-md-6">
                         <div>
                             <ul>
-                                <li><b>Name:</b> Gerald Bartlett</li>                               
-                                <li><b> Occupation:</b> Software Developer</li>
-                                <li><b>Education:</b> Diploma in Software Development From Keyin College</li>
+                                <li><u><b>Name:</u></b> Gerald Bartlett</li>                               
+                                <li><u><b> Occupation:</u></b> Software Developer</li>
+                                <li><u><b>Education:</u></b> Diploma in Software Development From Keyin College</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul>
-                                <li><b>Favorite Skill:</b> FrontEnd Development</li>
+                                <li><u><b>Favorite Skill:</u> FrontEnd Development</li>
                                 
-                                <li><b>Goals:</b> Web Developer & BackEnd Development using Java</li>
-
+                                <li><u><b>Goals:</u></b> Web Developer & BackEnd Development using Java</li>
+                                <li><u><b>Currently doing:</u></b> Currently studying Word Press</li>
                             </ul>
                         </div>
                     </div>
@@ -97,19 +92,34 @@
                             React Js, Node Js, Node ejs, UI/UX Design using Figma, Lucid Chart & Safe Agile using Trello Boards. 
                             Content Management using GitHub. Software Testing using J Unit. Database programming using PostgreSQL,
                              Mongo db & MySql. Development tools such as Postman & Docker. I am passionate and focused when I take on any task.
-                             I am eager to learn, work well within a team and love eureka moments when coding
-                            
+                             I am eager to learn, work well within a team and love eureka moments when coding                            
                              <br>                            
-                        </p>
-                       
+                        </p>                       
                     </div>
+
                     <div class="col-md-6a">
                         <p> Prior to studying Software Development, I have had extensive experience in sales, marketing & customer service 
                             which allowed me to be able to work one on one with customers. I listened carefully & ask appropriate questions, 
                             So that I may understand what 
-                            customers are asking for and what they expect to get.
+                            customers are asking for and what they expect to get </p>
+                            
                              <br>
-                           
+                                <button onclick="playVid()" type="button"> Play Video </button>
+                                <button onclick="pauseVid()" type="button"> Pause Video </button>
+
+
+                                <script>
+                                    var x = document.getElementById("myVideo"); 
+                                    
+                                    function playVid() { 
+                                      x.play(); 
+                                    } 
+                                    
+                                    function pauseVid() { 
+                                      x.pause(); 
+                                    } 
+                                </script>
+
                              <br>
                              <br>
                              <div class="row">
@@ -239,8 +249,8 @@
                     <div class="card servicesText">
                         <div class="card-body">
                             <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">  <div><a class="navbar-brand" href="images/Instagram.pdf" target=_blank >Figma Design1</a></div></h4>
-                            <h4 class="card-title mt-3">  <div><a class="navbar-brand" href="images/Group Sprint Project.pdf" target=_blank >Figma Design2</a></div></h4>
+                            <h4 class="card-title mt-3">  <div><a class="navbar-brand" href="/images/Instagram.pdf" target=_blank >Figma Design1</a></div></h4>
+                            <h4 class="card-title mt-3">  <div><a class="navbar-brand" href="/images/Group Sprint Project.pdf" target=_blank >Figma Design2</a></div></h4>
                             <p class="card-text mt-3">UI/UX class using Figma. Figma Design 1 is a design of a project I did in class, under instructor supervision 
                                 that show an I-Phone screen in different stages.
                                 Figma Design 2 is a Team "React Js Project" that show how our project would look. 
@@ -376,7 +386,10 @@
         <br>
         <br>
         <br>
-
+        <br>
+        <br>
+        <br>
+        <br>
           
 <!-- contact section-->
 <section id="contact">
@@ -394,13 +407,20 @@
                     <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
                     <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
                     </style>
+                   
                 </div>
+
+                <p>Click the button to see the current date.</p>
+    <button onclick="getElementById('demo').innerHTML=Date()">What day is today?</button>
+    <p id="demo"></p>
             </div>
             <!-- form fields -->
+        <br>
+        <br>
             <div class="col-lg-6">
                 <form action="mailto: fridays.bay@hotmail.com"  method="post" enctype="text/plain">
                     <img src="images/me.png" class= "imageAboutMe" alt="" height="150">
-                <div><br><a class="navbar-brand" href="G_Bartlett_2022_Resume.pdf" target=_blank ><b>Go to My Resume</b> </a></div>
+                <div><br><a class="navbar-brand" href="/Resume/G_Bartlett_2022_Resume.pdf" target=_blank ><b>Go to My Resume</b> </a></div>
                     
                     <button type="submit" class="btn btn-success mt-3"><a href="mailto:fridays.bay@hotmail.com"></a> To Contact me via e-mail click here</button> 
                 </form>             
@@ -444,6 +464,6 @@
     </div>
    
 </footer>
-
+<script type="text/javascript" src="/script/script.js"></script>
 </body>
 </html>
