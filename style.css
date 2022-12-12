@@ -3,6 +3,15 @@
   font-size: clamp(1.3rem, 7vw, 2rem);
 } */
 
+body, html {
+ 
+  height: 100vh; 
+}
+body {
+  margin: 0;
+  
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -61,13 +70,24 @@ a {
   display: none;
 }
 
+/* 
+@media screen and (max-width: 1450px) {
+
+  html,
+  body {
+      margin: 0px;
+      padding: 0px;
+  } */
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px)
+ {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: left;
     display: block;
   }
+
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -84,55 +104,33 @@ a {
     text-align: left;
   }
 }
+
 @media screen and (max-width: 600px) {
-  .imageAboutPage1{
-    max-width: 10%;
+  .imageAboutPage1 {
+    max-width: 100%;
     float: left;
     margin: 0 auto;
     height: auto
     
   }
   .col-md-6, .text-center, .hero_title, h2 .hero_desc, h1,  a{
-    font-size: 15px;
+    font-size: 12px;
     float: left;
     margin: 10 auto;
     height: auto
   }
+
   }
-/* .container mt-4 pt-4, .imageAboutPage1{
-  /* margin: 0 auto; */
-  /* height: auto;
-  max-width: auto;
-  float: left;
-  border: none;
-  display: block;
-  padding: 5px 0;
-*/ 
 
-/* .nav-item {
-  margin-left: 1.75rem;
-} */
+      
 
 
 
-
-  /* .nav-menu.active {
-      left: 0;
-  } */
-
-  /* .nav-item {
-      margin: 2.5rem 0;
-  } */
-  /* Hide the link that should open and close the topnav on small screens */
-
-  /* .nav-links .icon {
-    display: none;
-  } */
-
-
- #background-video {
-  width: 100vw;
-  height: 150vh;
+ #myVideo {
+  /* width: 100vw;
+  height: 150vh; */
+  min-width: 100%;
+  min-height: 100%;
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -140,6 +138,22 @@ a {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgba(128, 128, 128, 0.468);
+  color: rgba(255, 255, 255, 0.435);
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -150,25 +164,6 @@ h1, h2,  .col-lg-8 {
   text-align: left;
 }
 
-/* h1 {
-  font-size: 6rem;
-  margin-top: 30vh;
-}
-
-h2 { font-size: 3rem; } */
-
-
-
-/* .nav-links, .navbar-nav {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 27px;
-   
-} */
 
 
 
@@ -207,10 +202,14 @@ h2 { font-size: 3rem; } */
 
 /* hero background image */
 .bgimage {
-    height:105vh;
-    background: url("images/heroImage2.jpg");
-    background-size:cover;
-    position:static;
+  height: 100%;
+  background-image: url("images/heroImage2.jpg");
+  background-size:cover;
+  position:relative;
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   overflow: hidden;
    
 }
 h2, h1{
@@ -255,7 +254,8 @@ h2, h1{
     100% { left:0px; top:10px;}
   }
 .hero_desc {
-    font-size: 3rem;
+    font-size: 1.75rem;
+   
   
 }
 
@@ -273,7 +273,7 @@ h2, h1{
 /* about section image css */
 
 .imageAboutPage1 {
-  width: 80%;
+  width: 100%;
   border-radius:50%;
 }
 
@@ -337,7 +337,9 @@ h2, h1{
 }
 
 .col-md-6,.col-md-6a, .column{
-  color:aliceblue;
+  color: #f2f2f2;
+  /* color:rgb(68, 255, 0); */
+ 
   font-family:sans-serif;
   font-weight:300;
   font-size: 18px;
