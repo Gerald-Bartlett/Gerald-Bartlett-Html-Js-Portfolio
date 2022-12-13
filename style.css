@@ -107,15 +107,21 @@ a {
 
 @media screen and (max-width: 600px) {
   .imageAboutPage1 {
-    max-width: 100%;
+    max-width: 50%;
     float: left;
     margin: 0 auto;
     height: auto
     
   }
-  .col-md-6, .text-center, .hero_title, h2 .hero_desc, h1,  a{
-    font-size: 12px;
-    float: left;
+  .col-md-6, .text-center, .hero_title, h2 .hero_desc, h1,  a, .col-lg-8{
+    font-size: 15px;
+    float: top;
+    margin: 10 auto;
+    height: auto
+  }
+  li, p{
+    font-size: 15px;
+    float: top;
     margin: 10 auto;
     height: auto
   }
@@ -141,7 +147,7 @@ a {
 }
 
 /* Style the button used to pause/play the video */
-#myBtn {
+/* #myBtn {
   width: 200px;
   font-size: 18px;
   padding: 10px;
@@ -154,7 +160,7 @@ a {
 #myBtn:hover {
   background: #ddd;
   color: rgb(0, 0, 0);
-}
+} */
 
 
 h1, h2,  .col-lg-8 {
@@ -273,8 +279,8 @@ h2, h1{
 /* about section image css */
 
 .imageAboutPage1 {
-  width: 100%;
-  border-radius:50%;
+  width: 80%;
+  border-radius:100%;
 }
 
 .devicon-css3-plain-wordmark colored{
@@ -329,8 +335,8 @@ h2, h1{
 
 /* spacing on all sections */
 #about, #services, #portfolio, #contact {
-    margin-top: 2rem;
-    padding-top: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
 }
 #contact {
     padding-bottom: 1rem;
@@ -341,8 +347,8 @@ h2, h1{
   /* color:rgb(68, 255, 0); */
  
   font-family:sans-serif;
-  font-weight:300;
-  font-size: 18px;
+  font-weight:200;
+  font-size: 17px;
  
 }
 
