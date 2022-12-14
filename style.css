@@ -31,7 +31,15 @@ a {
   text-decoration: none;
 }
 
-
+.text-center{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 120px;
+  font-family: cursive;
+}
+u{
+  color:white;
+}
 
 
 
